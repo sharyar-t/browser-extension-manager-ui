@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="text-4xl font-medium">App</div>
+  <h1 class="text-preset-1">App</h1>
 </template>
