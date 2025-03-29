@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.theme-dark &));
 
 @font-face {
   font-family: Noto Sans;
@@ -29,6 +30,7 @@
 
   --color-neutral-0: #FBFDFE;
   --color-neutral-100: #EEEEEE;
+  --color-neutral-200: #D6E2F5;
   --color-neutral-300: #C6C6C6;
   --color-neutral-600: #535868;
   --color-neutral-700: #2F364B;
@@ -37,9 +39,6 @@
   --color-red-400: #F25C54;
   --color-red-500: #DE4840;
   --color-red-700: #C7231A;
-
-  --light-gradient: linear-gradient(180deg, #EBF2FC 0%, #EEFBF9 100%);
-  --dark-gradient: linear-gradient(180deg, #04091B 0%, #091540 100%);
 
   --text-preset-1: 34px;
   --text-preset-1--line-height: 100%;
@@ -99,11 +98,8 @@
   --radius-full: 9999px;
 }
 
-@layer utilities {
-  .bg-gradient-light {
-    background-image: var(--light-gradient);
-  }
-  .bg-gradient-dark {
-    background-image: var(--dark-gradient);
+@layer base {
+  button {
+    cursor: pointer;
   }
 }
