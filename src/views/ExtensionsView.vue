@@ -67,7 +67,7 @@ const filteredExtensionsList = computed(() => {
       <AppCard v-for="extension in filteredExtensionsList" :key="extension.name">
         <div class="flex flex-col gap-300">
           <div class="flex items-start gap-200">
-            <img :src="extension.logo" :alt="extension.name" width="60px" height="60px" />
+            <img :src="extension.logo" :alt="extension.name" width="60" height="60" />
             <div class="flex flex-col gap-100">
               <h3 class="text-preset-2 text-neutral-900 dark:text-neutral-0">{{ extension.name }}</h3>
               <p class="text-preset-5 text-neutral-600 dark:text-neutral-300">{{ extension.description }}</p>
