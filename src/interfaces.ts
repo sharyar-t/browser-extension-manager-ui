@@ -4,3 +4,9 @@ export interface IExtension {
   description: string
   isActive: boolean
 }
+
+export enum IFilter {
+  All = 'all',
+  Active = 'active',
+  Inactive = 'inactive'
+}
